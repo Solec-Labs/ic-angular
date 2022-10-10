@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "parent": "@angular-devkit/build-angular/src/builders/dev-server/schema.json",
+  "title": "IC Dev Server builder",
+  "description": "Extends the default Angular Dev Server builder to add support for the Internet Computer."
+}

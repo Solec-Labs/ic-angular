@@ -1,0 +1,9 @@
+# Output
+/node_modules
+/dist
+/reports
+/coverage
+
+# IDEs
+/.vscode/*
+!/.vscode/extensions.json

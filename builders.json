@@ -1,0 +1,14 @@
+{
+  "builders": {
+    "browser": {
+      "implementation": "./dist/browser/browser.js",
+      "schema": "./dist/browser/schema.json",
+      "description": "Extends the default Angular browser builder to add support for the Internet Computer."
+    },
+    "dev-server": {
+      "implementation": "./dist/dev-server/dev-server.js",
+      "schema": "./dist/dev-server/schema.json",
+      "description": "Extends the default Angular Dev Server builder to add support for the Internet Computer."
+    }
+  }
+}

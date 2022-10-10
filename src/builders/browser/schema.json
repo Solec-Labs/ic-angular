@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "parent": "@angular-devkit/build-angular/src/builders/browser/schema.json",
+  "title": "IC Browser builder",
+  "description": "Extends the default Angular browser builder to add support for the Internet Computer."
+}

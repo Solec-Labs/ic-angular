@@ -1,0 +1,69 @@
+{
+  "name": "@solec/ic-angular",
+  "version": "0.0.0",
+  "description": "A collection of builders and schematics to support development of Angular apps for the Internet Computer.",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && ts-node scripts/build-schemas.ts",
+    "test": "jest",
+    "test:cov": "jest --collect-coverage",
+    "lint": "eslint src/**/*.ts --fix",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --check \"**/*.ts\""
+  },
+  "engines": {
+    "node": "^14 || ^16"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "~0.1402.5",
+    "@angular-devkit/build-angular": "~14.2.5",
+    "rxjs": "6.6.7"
+  },
+  "devDependencies": {
+    "@tsconfig/node16-strictest": "^1.0.4",
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "deepmerge": "^4.2.2",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "jest": "^29.1.2",
+    "jest-junit": "^14.0.1",
+    "jest-ts-auto-mock": "^2.1.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-auto-mock": "^3.6.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.8.4"
+  },
+  "homepage": "https://github.com/Solec-Labs/ic-angular#readme",
+  "bugs": {
+    "url": "https://github.com/Solec-Labs/ic-angular/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Solec-Labs/ic-angular.git"
+  },
+  "author": "Solec Labs",
+  "license": "ISC",
+  "keywords": [
+    "dfinity",
+    "internet",
+    "computer",
+    "webpack",
+    "canister",
+    "id",
+    "proxy",
+    "angular",
+    "builder",
+    "schematic",
+    "plugin",
+    "environment"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["scripts/**/*.ts"],
+  "compilerOptions": {
+    "plugins": [
+      { "transform": "ts-auto-mock/transformer", "cacheBetweenTests": false }
+    ]
+  }
+}

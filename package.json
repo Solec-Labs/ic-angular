@@ -18,9 +18,11 @@
   "dependencies": {
     "@angular-devkit/architect": "~0.1402.5",
     "@angular-devkit/build-angular": "~14.2.5",
-    "rxjs": "6.6.7"
+    "rxjs": "6.6.7",
+    "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
+    "@solec/ic-webpack-plugin": "^0.2.4",
     "@tsconfig/node16-strictest": "^1.0.4",
     "@types/jest": "^29.1.2",
     "@types/node": "^18.8.3",

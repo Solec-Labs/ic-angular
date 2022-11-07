@@ -5,6 +5,8 @@ import {
   DevServerBuilderOutput as AngularDevServerBuilderOutput,
 } from '@angular-devkit/build-angular';
 import type { Observable } from 'rxjs';
+import IcWebpackPlugin from '@solec/ic-webpack-plugin';
+import merge from 'webpack-merge';
 
 export type DevServerBuilderOptions = AngularDevServerBuilderOptions;
 
@@ -14,7 +16,12 @@ export function executeDevServerBuilder(
   options: DevServerBuilderOptions,
   context: BuilderContext,
 ): Observable<DevServerBuilderOutput> {
-  return executeAngularDevServerBuilder(options, context);
+  return executeAngularDevServerBuilder(options, context, {
+    webpackConfiguration: originalWebpackConfig =>
+      merge(originalWebpackConfig, {
+        plugins: [new IcWebpackPlugin()],
+      }),
+  });
 }
 
 export default createBuilder(executeDevServerBuilder);
